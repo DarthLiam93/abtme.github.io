@@ -1,1 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Last Updated: 202504101121 -->
+    <title>William Lint About Me</title>
+    <link rel="stylesheet" type="text/css" href="WilliamLint_styles.css">
+    <script type="text/JavaScript" src="WilliamLint.js"></script>
+</head>
+<body>
+    <center><img src="https://www.ecok.edu/themes/ecu/img/logo-big.png" alt="ECU Logo"></center>
+
+    <h1>The Life & Times of William Lint: A Tragedy</h1>
+
+    <p><b>My Name is William Lint</b></p>
+    <p><i>My Major is Computer Science</i></p>
+    <p><u>I am a Junior</u></p>
+
+    <h2>This semester I am taking the following classes:</h2>
+    <div class="container">
+        <div class="grid-1">
+            <h2>CMPSC-3323-01: Internet Programming</h2>
+            <p>Class about utilizing HTML, CSS, and JavaScript to produce webpages</p>
+        </div>
+        <div class="grid-2">
+            <h2>EHS-1114-02: Intro to Environmental Health Science</h2>
+            <p>THis Class Concerns Effects in the cycle of human and nature interaction and the effects we have on one another</p>
+        </div>
+        <div class="grid-3">
+            <h2>CMPSC-3543-01: Object Oriented Programming</h2>
+            <p>This class is about how we can write code to make a computer behave more like a human brain by writing code to act like things</p>
+        </div>
+        <div class="grid-4">
+            <h2>CMPSC-4983-01: Cloud Fundamentals</h2>
+            <p>This class teaches techniques and methodologies as well as different services that allow one to utilize web services to their fullest</p>
+        </div>
+    </div>
+
+    <h2>New JavaScript Interactions</h2>
+    <div class="new-section">
+        <div class="new-grid">
+            <h3>Arithmetic Operations</h3>
+            <form onsubmit="calculateArithmetic(event)">
+                <input type="number" id="num1" placeholder="First Number" required><br><br>
+                <input type="number" id="num2" placeholder="Second Number" required><br><br>
+                <label><input type="radio" name="operator" value="+" checked> Add</label><br>
+                <label><input type="radio" name="operator" value="-"> Subtract</label><br>
+                <label><input type="radio" name="operator" value="*"> Multiply</label><br>
+                <label><input type="radio" name="operator" value="/"> Divide</label><br><br>
+                <button type="submit">Calculate</button>
+            </form>
+        </div>
+
+        <div class="new-grid">
+            <h3>Factorial Calculator</h3>
+            <form onsubmit="calculateFactorial(event)">
+                <input type="number" id="factorialNum" placeholder="Enter an integer" required><br><br>
+                <button type="submit">Calculate Factorial</button>
+            </form>
+        </div>
+
+        <div class="new-grid">
+            <h3>Fibonacci Finder</h3>
+            <form onsubmit="calculateFibonacci(event)">
+                <input type="number" id="fibNum" placeholder="Enter N" required><br><br>
+                <button type="submit">Get Fibonacci</button>
+            </form>
+        </div>
+
+        <div class="new-grid">
+            <h3>Min, Max & Range</h3>
+            <form onsubmit="calculateStats(event)">
+                <input type="number" id="val1" placeholder="Value 1" required><br><br>
+                <input type="number" id="val2" placeholder="Value 2" required><br><br>
+                <input type="number" id="val3" placeholder="Value 3" required><br><br>
+                <button type="submit">Analyze</button>
+            </form>
+        </div>
+
+        <div class="new-grid span-grid">
+            <h3>Mailing List Sign-Up</h3>
+            <form onsubmit="signUp(event)">
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" placeholder="John" required><br><br>
+                <label for="lname">Last Name:</label><br>
+                <input type="text" id="lname" placeholder="Doe" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" placeholder="john@aol.com" required><br><br>
+                <label for="zip">ZIP Code:</label><br>
+                <input type="text" id="zip" placeholder="12345" required><br><br>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+            <div id="signupResults"></div>
+        </div>
+    </div>
+</body>
+</html>
 
